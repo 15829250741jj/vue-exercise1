@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 什么是闭包？
+    // 官方：闭包就是能够读取其他函数内部变量的函数。例如在javascript中，只有函数内部的子函数才能读取局部变量，所以闭包可以理解成“定义在一个函数内部的函数“。在本质上，闭包是将函数内部和函数外部连接起来的桥梁。
+    // 实现闭包：
+    // ① 函数嵌套
+    // ② 外层函数，必须要有局部变量
+    // ③ 内层函数必须要操作外层函数的局部变量，并且在外层中返回内层函数或内层函数在外部被间接的调用
+
+    function bieShu (){
+      function woDi(v) {
+        console.log(a);
+        a = v;
+        console.log(a);
+      }
+
+      return woDi;
+    };
+
+    var cyqz = bieShu();
+    cyqz(3);
+    cyqz('三三');
+
+
+    cyqz = null;
+
+
+
+
+
+  </script>
+</body>
+</html>

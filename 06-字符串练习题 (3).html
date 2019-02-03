@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    //1.实现一个js函数，输入一个字符串，判断这个字符串出现次数最多的字符，输出这个字符以及该字符出现的次数
+    var str='abcdaeadddddd';
+    function getSum(str){
+        var obj={};
+        for(var i=0;i<str.length;i++){
+            var key=str[i];
+            if(obj[key]){
+                obj[key]++;
+            }else{
+                obj[key]=1;
+            }
+        }
+        var maxCount=0;
+        var maxString='';
+        for(var key in obj){
+            if(maxCount<obj[key]){
+                maxCount=obj[key];
+                maxString=key;
+            }
+        }
+        return "出现字符最多的"+maxString+"出现了"+maxCount+"次";
+    }
+    console.log(getSum(str));
+
+    
+    
+    // 2.实现一个判断输入值是否为质数的函数isPrime(number),当number为质数时返回true，否则返回false
+    // function isPrime(number) {
+ 
+    //     if (number <= 1) {
+    //         return false;
+    //     }
+    //     for (var i = 2; i < number; i++) {
+    //         if (number % i == 0) {
+    //             return false;
+    //         }
+    //     }
+    //     return true;
+    //     }
+    // var num=Number(prompt('请输入数字'));
+    // var bol=isPrime(num);
+    // alert(bol);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

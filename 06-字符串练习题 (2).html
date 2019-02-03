@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // 1.字符串的不可变性
+        var str='abc';
+        str='hello';
+        // alert(str);
+        // 当重新给str赋值时,abc仍然在内存中，不会被修改
+        // 重新给字符串赋值 ，会重新在内存中开辟空间，这个特点就是字符串的不可变性
+        // 由于字符串的不可变性，大量拼接字符串的时候会产生效率问题
+        // 2.基本包装对象
+        // 3.字符串对象常见的方法：
+        // 获取字符串中的单个字符charAt(index)  字符串[index]（推荐使用）
+        // alert(str.charAt(1));
+        // alert(str[2]);
+        // 字符串的拼接 和 截   字符串.concat(str1,str2,str3);   截取:字符串.slice(start,end);
+        var str1='world';
+        var str2=' you ';
+        // console.log(str.concat(str1,str2));
+        // alert(str1.slice(1,3));
+        // // 查询字符是否在字符串中存在  字符串.indexof();   字符串.lastIndexof();
+        alert(str2.indexOf('y'));
+        // alert(str2.lastIndexOf('u'));
+        // 去除空白符 去除字符串两边的空格  字符串.trim();
+        // alert(str2.trim());
+        //字母字符大小写转换  字符串.toUpperCase();  字符串.toLowerCase();
+        str3='LOVE';
+        str4='like';
+        // alert(str.toUpperCase());
+        // alert(str3.toLowerCase());
+        //字符串替换  字符串.replace(oldStr,newStr);
+        // alert(str3.replace(str3,str4));
+        // 字符串分割 字符串.splite(sp);把一个字符串分割成字符串数组
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <button>生成英雄列表</button>
+  <ul></ul>
+  <script src="lib/jquery-1.12.4.js"></script>
+  <script>
+    $('button').click(function(){
+      var datas = ['安其拉', '鲁班', '后裔', '小乔', '百里首页'];
+      for(var i=0;i<datas.length;i++){
+        $('<li></li>')
+        .text(datas[i])
+        .append('<button>删除</button>')
+        .appendTo('ul');
+      }
+      $('ul button').click(function(){
+        $(this).parent().remove();
+      });
+    })
+
+  </script>
+</body>
+
+</html>

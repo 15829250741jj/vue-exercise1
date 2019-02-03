@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // 1. 给一个数字数组，统计公司员工薪资，计算公司中薪资大于20000元的人的个数。
+        // var num=[12000,1000,8000,9500,15000,30000,50000];
+        // var sal=num.filter(
+        //         function(e){
+        //             return e>20000;
+        //         }
+        //     );
+        //     alert(sal);   
+        // 2. 给一个数字数组，统计公司员工薪资，计算公司员工是否每一个人的薪资都超过5000。
+        // var num=[12000,1000,8000,9500,15000,30000,50000];
+        // var result=num.every(function(e){
+        //     return e>=5000;
+        // });
+        // alert(result);
+        // 3. 给一个数字数组，统计公司员工薪资，计算公司员工是否含有薪资超过5000的人。
+        // var num=[12000,1000,8000,9500,15000,30000,50000];
+        // var result=num.some(function(e){
+        //     return e>5000;
+        // });
+        // alert(result);
+        // 4. 给一个数字数组，统计公司员工薪资，给每一位员工的薪资翻3倍。
+        // var num=[12000,1000,8000,9500,15000,30000,50000];
+        // var result=num.map(function(e){
+        //     return e*3;
+        // });
+        // alert(result);
+        // 5. 学生名单简易管理系统【不用考虑重名】
+        var student=[];
+        var isOpen=true;
+        while(isOpen){
+            var input=prompt('欢迎使用名单管理系统:\n请选择您的操作\n1.添加\n2.删除\n3.查询\n4.退出');
+            switch(input){
+                case'1':
+                    var stu=prompt('请输入姓名');
+                    student.push(stu);
+                    alert('添加成功');
+                    break;
+                case '2':
+                    var stu1=prompt('请输入要删除的姓名');
+                    var index=student.indexOf(stu1);
+                    if(index==-1){
+                        alert('亲，输入的姓名不存在');
+                    }else{
+                        student.splice(index,1);
+                        alert('删除成功');
+                    }
+                    break;
+                case '3':
+                    var str='';
+                    str+=student.join('\n');
+                    alert(str);
+                    break;
+                case '4':
+                    alert('感谢使用');
+                    isOpen=false;
+                    break;
+            }
+        }
+        
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

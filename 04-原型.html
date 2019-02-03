@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    /* 
+      通过原型的方式实现动物类继承，动物都有性别和年龄，有吃东西的行为，
+      狗都有毛色，有看家的行为。要求实例化狗对象,并调用吃和看家的方法
+    */
+
+    function A(g, a) {
+      this.gender = g;
+      this.age = a;
+    };
+    
+    A.prototype.eat = function () {
+      console.log('贼能吃！！');
+    };
+
+    function D(c) {
+      this.color = c;
+    };
+
+    D.prototype = A.prototype;
+
+    D.prototype.look = function () {
+      console.log('wangwangwang');
+    };
+
+    var dh = new D('green');
+
+
+
+
+
+  </script>
+</body>
+
+</html>

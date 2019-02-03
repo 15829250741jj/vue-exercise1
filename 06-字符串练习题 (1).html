@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // 1  将一个字符串中 '张三|李四|王五|赵六|陈七'  的名字存放到一个数组中。
+        // var str1='张三|李四|王五|赵六|陈七';
+        // var result=str1.split('|');
+        // alert(result);
+
+        // 2  截取字符串"我爱中华人民共和国"，中的"中华"
+        // var str2='我爱中华人民共和国';
+        // alert(str2.slice(2,4));
+
+        // 3  把字符串 '你真棒,棒棒哒' 中的所有‘棒’字符，改为 ‘牛’ 
+    //     var str3='你真棒,棒棒哒';
+    //     while(true){
+    //         var index=str3.indexOf('棒');
+    //         if(index==-1){
+    //             break;
+    //         }else{
+    //             str3=str3.replace('棒','牛');
+    //         }
+    //     }
+    //    console.log(str3);
+        // 4  字符串 ‘无敌是多么寂寞，无敌是多么空虚，无敌是多么的冷，无敌是多么的...’，用程序统计无敌在字符串中出现的次数。
+        //  var str4='无敌是多么寂寞，无敌是多么空虚，无敌是多么的冷，无敌是多么的...';
+        //  var count=0;
+        //  while(true){
+        //      var index=str4.indexOf('无敌');
+        //      if(index==-1){
+        //          break;
+        //      }else{
+        //          count++;
+        //          str4=str4.slice(index+2);
+        //          alert(str4);
+        //      }
+        //  }
+        //  alert(count);
+
+        // 5  字符串 ‘https://www.jd.com/index.html?userName=张三&pwd=123456&id=123456’ 
+        // 把地址?后面的参数提取出来存放到一个对象中 
+        // var str='https://www.jd.com/index.html?userName=张三&pwd=123456&id=123456';
+        // var index=str.indexOf('?');
+        // var newStr=str.slice(index+1);
+        // var arr=newStr.split('&');
+        // // alert(arr);
+        // var obj={};
+        // for(var i=0;i<arr.length;i++){
+        //     var newArr=arr[i].split('=');
+        //     // alert(newArr);
+        //     var key=newArr[0];
+        //     var value=newArr[1];
+        //     obj[key]=value;
+        // }
+        // console.log(obj);
+        
+        // 实现一个js函数，输入一个字符串，判断这个字符串出现次数最多的字符，输出这个字符以及该字符出现的次数
+        // var str="aagaabbbabtavnahaa";
+        // function maxstringload(str) {  
+        //      var obj={};   
+        //      for(var i=0;i<str.length;i++){     
+        //             var key=str[i];//key中存储的是每一个字符串      
+        //             if(obj[key]){//判断这个键值对中有没有这个键         
+        //              obj[key]++;       
+        //             }else{           
+        //                  obj[key]=1;//obj[w]=1     
+        //                     }  
+        //      }     
+        //      var maxCount=0;//假设是出现次数最多的次数   
+        //      var maxString="";//假设这个字符串是次数出现最多的字符串  
+        //        for(var key in obj){       
+        //           if(maxCount<obj[key]){      
+        //                     maxCount=obj[key];//保存最大的次数      
+        //                     maxString=key;        }  
+        //               }    
+        //         return "出现次数最多的字母:"+maxString+"出现了"+maxCount+"次";
+        //     }
+        //     console.log(maxstringload(str));
+
+</script>
+</head>
+<body>
+    
+</body>
+</html>
